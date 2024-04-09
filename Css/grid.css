@@ -1,0 +1,49 @@
+main{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+img{
+    width: 15%;
+    height: auto;
+}
+
+picture {
+    padding: 2%;
+}
+
+
+/* Celular */
+@media screen and (max-width: 640px){ 
+    .tablet , .pc {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 640px) and (max-width: 1280px){
+    .celular , .pc {
+        display: none;
+    }
+
+    .twoColumns{
+        display: grid;
+        grid-template-columns: 90% 10%;
+    }
+
+    .tablet{
+        width: 100%;
+    }
+}
+
+/* Pc*/
+@media screen and (min-width: 1280px){
+    .celular , .tablet {
+        display: none;
+    }
+
+    .imgArticulo{
+        display: grid;
+        justify-content: space-around;  
+    }
+}
